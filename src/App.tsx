@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 import { DeviceRedirect } from './components/DeviceRedirect';
 import { BlogHome } from './components/blog/BlogHome';
 import { BlogPost } from './components/blog/BlogPost';
-import { NetWorthCalculator } from './components/calculators/NetWorthCalculator';
+import { NetWorthCalculatorHome } from './components/netWorthCalculator/NetWorthCalculatorHome';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
           } />
           <Route path="/blogs" element={<BlogHome />} />
           <Route path="/blogs/:slug" element={<BlogPost />} />
-          <Route path="/net_worth_calculator" element={<NetWorthCalculator />} />
+          <Route path="/net_worth_calculator" element={<NetWorthCalculatorHome />} />
         </Routes>
         <Footer />
       </div>
